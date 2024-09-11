@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    background-repeat: repeat-y;
+    background: none; /* Remover o fundo direto */
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento */
+    overflow: hidden; /* Impede o overflow do pseudo-elemento */
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-dark-gym-with-equipments-image_2675066.jpg') no-repeat center center/cover;
+    filter: blur(3px); /* Ajuste o nível de desfoque aqui */
+    z-index: -1; /* Coloca a imagem embaçada atrás de outros conteúdos */
+}
+
+
+
+
+
+
+body.carousel{
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    perspective: 1200px; 
+}
+
+.carousel__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-300px) rotateY(0deg); 
+    transition: transform 1s;
+}
+
+.carousel__item {
+    position: absolute;
+    width: 30%;
+    height: 135%;
+    left: 35%;
+    top: 0;
+    transform-origin: center center;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: 0 0 15px rgba(236, 6, 6, 0.5); */
+}
+
+.carousel__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+
+}
+
+.carousel__item:nth-child(1) { transform: rotateY(0deg) translateZ(300px); } 
+.carousel__item:nth-child(2) { transform: rotateY(60deg) translateZ(300px); }
+.carousel__item:nth-child(3) { transform: rotateY(120deg) translateZ(300px); }
+.carousel__item:nth-child(4) { transform: rotateY(180deg) translateZ(300px); }
+.carousel__item:nth-child(5) { transform: rotateY(240deg) translateZ(300px); }
+.carousel__item:nth-child(6) { transform: rotateY(300deg) translateZ(300px); }
+
+.carousel__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    user-select: none;
+}
+
+.carousel__nav--left {
+    left: 10px;
+}
+
+.carousel__nav--right {
+    right: 10px;
+}
+
+.carousel__description {
+    position: absolute; /* Add absolute positioning to the description */
+    bottom: -40px; /* Place the description at the bottom of the image */
+    left: 10%; /* Ajuste o valor conforme necessário */
+    right: 25%; /* Ajuste o valor conforme necessário */
+    text-align: center;
+    color: rgb(249, 250, 252);
+    padding-top: 1px;
+    background-color: rgba(131, 126, 126, 0.8);/* Add a dark background to the description */
+    padding: 2px; /* Add some padding to the description */
+}

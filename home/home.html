@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../tabela4.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../cards.css">
+    <link rel="stylesheet" href="../barraLateral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+    
+    <!-- Botão do Menu Hamburger -->
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Barra lateral incluída -->
+    <div class="sidebar closed">
+        <div class="logo">
+            <img src="/fotos/logo1.png" alt="Logo">
+        </div>
+        <ul>
+            <!-- <li><a href="/treino/treino.html"><i class="fas fa-dumbbell"></i> Treino</a></li> -->
+            <li><a href="/alunos/alunos.html"><i class="fas fa-folder-open"></i> Alunos Matriculados</a></li>
+            <li><a href="/cadastros/cadastrar.html"><i class="fas fa-users"></i> Cadastrar Alunos</a></li>
+        </ul>
+         <!-- Botão de sair no rodapé da sidebar -->
+    <div class="BT-SAIR">
+        <a href="../login/loguin.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </div>
+    </div>
+
+<!-- CARROSSEL-->
+<div class="carousel">
+    <div class="carousel__container">
+        <div class="carousel__item">
+            <img src="https://integralmedica.vtexassets.com/arquivos/ids/166741-800-auto?v=638563018421900000&width=800&height=auto&aspect=true" alt="Image 1">
+            <p class="carousel__description">R$99,99</p>
+        </div>
+        <div class="carousel__item">
+            <img src="https://lojanutrifit.com.br/wp-content/uploads/2018/10/whey-bar-darkness-integralmedica.png" alt="Image 2">
+            <p class="carousel__description">R%12,00</p>
+        </div>
+        <div class="carousel__item">
+            <img src="https://integralmedica.vtexassets.com/arquivos/ids/166772/RTD-COCO.png?v=638563894645870000" alt="Image 3">
+            <p class="carousel__description">R$9,99</p>
+        </div>
+        <div class="carousel__item">
+            <img src="https://cdn.awsli.com.br/2500x2500/2356/2356489/produto/249755811/dark-whey-z7ajzxnxc2.png" alt="Image 4">
+            <p class="carousel__description">R$140,00</p>
+        </div>
+        <div class="carousel__item">
+            <img src="https://integralmedica.vtexassets.com/arquivos/ids/166732/SACO_CREATINA-1KG-ME2889-1000x1000.png?v=638556403216330000" alt="Image 5">
+            <p class="carousel__description">R$350,00</p>
+        </div>
+        <div class="carousel__item">
+            <img src="https://integralmedica.vtexassets.com/arquivos/ids/166764/165424-auto-auto.png?v=638563215203700000" alt="Image 6">
+            <p class="carousel__description">R$130,00</p>
+        </div>
+    </div>
+    <div class="carousel__nav carousel__nav--left" onclick="rotateCarousel(-1)">&#10094;</div>
+    <div class="carousel__nav carousel__nav--right" onclick="rotateCarousel(1)">&#10095;</div>
+</div>
+
+<!-- CARDS-->
+<div class="card-container">
+    <div class="card">
+        <img src="/fotos/mensal.png" alt="Imagem 1">
+        <div class="card-content">
+            <!-- <h3>Título 1</h3>
+            <p>Descrição da imagem 1.</p> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="/fotos/trimestral.png" alt="Imagem 2">
+        <div class="card-content">
+            <!-- <h3>Título 2</h3>
+            <p>Descrição da imagem 2.</p> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="/fotos/semestral.png" alt="Imagem 3">
+        <div class="card-content">
+            <!-- <h3>Título 3</h3>
+            <p>Descrição da imagem 3.</p> -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="/fotos/anual.png" alt="Imagem 4">
+        <div class="card-content">
+            <!-- <h3>Título 4</h3>
+            <p>Descrição da imagem 4.</p> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="home.js"></script>
+    <script src="../barraLateral.js"></script>
+
+    <!-- FOOTER -->
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/fotos/logo1.png" alt="GlubsForme Logo">
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> Rua alto branco, 123, Campina Grande</p>
+                <p><i class="fas fa-phone"></i> (83) 9 9931-6281</p>
+                <p><i class="fas fa-envelope"></i> GlubsForme@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlubsForme. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

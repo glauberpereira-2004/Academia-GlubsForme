@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loguin.css">
+    <title>Animated Login Page</title>
+</head>
+<body>
+    <div class="square">
+        <i style="--clr: #00f0ff;"></i>
+        <i style="--clr: #ff0057;"></i>
+        <i style="--clr: #fffd44;"></i>
+    </div>
+    <div class="login">
+        <h2>Login</h2>
+        <div class="inputBx">
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div class="inputBx">
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="inputBx">
+            <input type="submit" value="Entre" onclick="validateForm()">
+        </div>
+        
+        <a href="#" class="forgot">Forgot Password</a>
+        <a href="#" class="signup">Signup</a>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Por favor, preencha todos os campos.");
+            } else {
+                window.location.href = "/home/home.html";
+            }
+        }
+    </script>
+</body>
+</html>

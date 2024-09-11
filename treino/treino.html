@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Treino - Academia</title>
+    <link rel="stylesheet" href="treino.css">
+    <link rel="stylesheet" href="../barraLateral.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Botão do Menu Hamburger -->
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Barra lateral incluída -->
+    <div class="sidebar closed">
+        <div class="logo">
+            <img src="/fotos/logo1.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="/home/home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/alunos/alunos.html"><i class="fas fa-folder-open"></i> Alunos Matriculados</a></li>
+            <li><a href="/cadastros/cadastrar.html"><i class="fas fa-users"></i> Cadastrar Alunos</a></li>
+        </ul>
+         <!-- Botão de sair no rodapé da sidebar -->
+    <div class="BT-SAIR">
+        <a href="../login/loguin.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </div>
+    </div>
+
+    <!-- TABELA COM AS COISAS DO SITE-->
+    <div class="container">
+        <h1>Gerenciar Treino</h1>
+        <div id="workoutDetails">
+
+            <div class="workout">
+                <p>Treino 1: Nome do Treino</p>
+                <button class="edit-workout">Editar</button>
+                <button class="delete">Excluir</button>
+                <button class="add-exercise">Adicionar Exercício</button>
+                <div class="exercises">
+                    
+                    <div class="exercise">
+                        <p>Exercício 1: Nome do Exercício</p>
+                        <button class="edit-exercise">Editar Exercício</button>
+                        <button class="delete-exercise" data-workout-index="0" data-exercise-index="1">Excluir Exercício</button>
+
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        <button id="addWorkout">Adicionar Treino</button>
+    </div>
+
+    <script src="treino.js"></script>
+    <script src="../barraLateral.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/fotos/logo1.png" alt="GlubsForme Logo">
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> Rua alto branco, 123, Campina Grande</p>
+                <p><i class="fas fa-phone"></i> (83) 9 9931-6281</p>
+                <p><i class="fas fa-envelope"></i> GlubsForme@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlubsForme. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

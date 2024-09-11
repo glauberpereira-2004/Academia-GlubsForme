@@ -1,0 +1,122 @@
+/* Estilo geral da barra lateral */
+.sidebar {
+    width: 250px;
+    background: rgb(2,0,36);
+    background: linear-gradient(7deg, rgba(2,0,36,1) 15%, rgba(30,24,83,1) 53%, rgba(2,2,65,1) 77%);    
+    position: fixed;
+    top: 0;
+    left: -250px; /* Esconde a barra lateral inicialmente fora da tela */
+    height: 100%;
+    z-index: 1000;
+    padding-top: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: left 0.3s ease; /* Animação para abrir/fechar */
+}
+
+/* Quando a barra lateral está aberta */
+.sidebar.open {
+    left: 0; /* Move a barra lateral para dentro da tela */
+}
+
+/* Logo na barra lateral */
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.sidebar .logo h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Lista de itens da barra lateral */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Estilos dos ícones e texto */
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Efeito de hover */
+.sidebar ul li a:hover {
+    background-color: #4f1ee2;
+    border-radius: 5px;
+}
+
+/* Estilo do botão hamburger */
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Para garantir que o botão esteja acima da barra lateral */
+    color: rgb(245, 245, 245);
+}
+
+/* Estilo do conteúdo da página */
+.content {
+    padding: 20px;
+    margin-left: 0; /* Ajuste para manter o conteúdo fixo */
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.logo img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* BOTÃO DE SAIR */
+
+
+.BT-SAIR {
+    display: flex;
+    align-items: center; /* Centraliza o ícone e o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 20px; /* Ajuste a margem conforme necessário */
+    text-align: center;
+    color: #f9fafc; /* Cor inicial do texto do botão de sair */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 16px; /* Tamanho da fonte do botão de sair */
+}
+
+.BT-SAIR a {
+    color: inherit; /* Herda a cor do container pai (.BT-SAIR) */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.BT-SAIR a:hover {
+    color: #ff4b5c; /* Cor ao passar o mouse sobre o botão */
+}
